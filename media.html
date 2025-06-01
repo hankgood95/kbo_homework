@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>미디어뉴스 | KBO</title>
+  <link rel="stylesheet" type="text/css" href="common.css">
+  <style>
+    #page {
+      width: 980px;
+      margin: 0 auto;
+    }
+
+    header #logo {
+      float: left;
+      margin: 15px 0 0 20px;
+    }
+
+    header #moto {
+      float: left;
+      margin: 45px 0 0 20px;
+    }
+
+    header #top_menu {
+      float: right;
+      margin: 50px 0 0 0;
+    }
+
+    header #top_menu li {
+      display: inline;
+    }
+
+    .line {
+      margin-top: 25px;
+      border-top: solid 1px #cccccc;
+    }
+
+    header nav ul {
+      margin-top: 25px;
+    }
+
+    header nav li {
+      display: inline;
+    }
+
+    header nav li.item {
+      margin-left: 40px;
+    }
+
+    main {
+      margin-top: 10px;
+    }
+
+    input[name="media-tab"] {
+      display: none;
+    }
+
+    .tab-wrapper label {
+      padding: 10px 20px;
+      background-color: #ddd;
+      border: 1px solid #aaa;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    .media-section {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #tab-highlight:checked ~ .media-content #highlight,
+    #tab-news:checked ~ .media-content #news {
+      display: block;
+    }
+
+    input#tab-highlight:checked + label[for="tab-highlight"],
+    input#tab-news:checked + label[for="tab-news"] {
+      background-color: #00a8ab;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <header>
+      <a href="mainpage.html"><img id="logo" src="logo.png" alt="KBO 홈"></a>
+      <img id="moto" src="moto.png">
+      <ul id="top_menu">
+        <li>로그인 | </li>
+        <li>회원가입 | </li>
+        <li>사이트맵 | </li>
+        <li>회사 소개 | </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="line"></div>
+      <nav>
+        <ul>
+          <br><br><br><br>
+          <li><a href="schedule.html"><img src="menu01.png" alt="일정결과"></a></li>
+          <li class="item"><a href="record.html"><img src="menu02.png" alt="기록순위"></a></li>
+          <li class="item"><a href="media.html"><img src="menu03.png" alt="미디어뉴스"></a></li>
+          <li class="item"><a href="team.html"><img src="menu04.png" alt="구단소개"></a></li>
+          <li class="item"><a href="promotion.html"><img src="menu05.png" alt="KBO홍보창"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>KBO 미디어 뉴스</h2>
+
+      <div class="tab-wrapper">
+        <input type="radio" name="media-tab" id="tab-highlight" checked>
+        <label for="tab-highlight">하이라이트</label>
+
+        <input type="radio" name="media-tab" id="tab-news">
+        <label for="tab-news">뉴스</label>
+
+        <div class="media-content">
+          <div id="highlight" class="media-section">
+            <h3>하이라이트 영상</h3>
+            <img src="highlights.png" width="900">
+          </div>
+
+          <div id="news" class="media-section">
+            <h3>최신 뉴스</h3>
+            <img src="news.png" width="900">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기록순위 | KBO</title>
+<style>
+#page {
+    width: 980px;
+    margin: 0 auto;
+}
+header #logo {
+    float: left;
+    margin: 15px 0 0 20px;
+}
+header #moto {
+    float: left;
+    margin: 45px 0 0 20px;
+}
+header #top_menu {
+    float: right;
+    margin: 50px 0 0 0;
+}
+header #top_menu li {
+    display: inline;
+}
+.line {
+    margin-top: 25px;
+    border-top: solid 1px #cccccc;
+}
+header nav ul {
+    margin-top: 25px;
+}
+header nav li {
+    display: inline;
+}
+header nav li.item {
+    margin-left: 40px;
+}
+main {
+    margin-top: 10px;
+}
+.tab-buttons {
+    margin-top: 20px;
+}
+
+.tab-buttons label {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[name="record-tab"] {
+    display: none;
+}
+
+.record-section {
+    display: none;
+    margin-top: 20px;
+}
+
+#tab-team:checked ~ .content #team,
+#tab-hitter:checked ~ .content #hitter,
+#tab-pitcher:checked ~ .content #pitcher {
+    display: block;
+}
+
+input#tab-team:checked + label[for="tab-team"],
+input#tab-hitter:checked + label[for="tab-hitter"],
+input#tab-pitcher:checked + label[for="tab-pitcher"] {
+    background-color: #00a8ab;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <div id="page">
+    
+<header>
+  <a href="mainpage.html"><img id="logo" src="logo.png" alt="KBO 홈"></a>
+  <img id="moto" src="moto.png">
+  <ul id="top_menu">
+    <li>로그인 | </li>
+    <li>회원가입 | </li>
+    <li>사이트맵 | </li>
+    <li>회사 소개 | </li>
+  </ul>
+  <div class="clear"></div>
+  <div class="line"></div>
+
+  <nav>
+    <ul>
+      <br><br><br><br>
+      <li><a href="schedule.html"><img src="menu01.png" alt="일정결과"></a></li>
+      <li class="item"><a href="record.html"><img src="menu02.png" alt="기록순위"></a></li>
+      <li class="item"><a href="media.html"><img src="menu03.png" alt="미디어뉴스"></a></li>
+      <li class="item"><a href="team.html"><img src="menu04.png" alt="구단소개"></a></li>
+      <li class="item"><a href="promotion.html"><img src="menu05.png" alt="KBO홍보창"></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div id="page">
+    <h2>KBO 기록 순위</h2>
+
+    <div class="tab-wrapper">
+        <input type="radio" name="record-tab" id="tab-team" checked>
+        <label for="tab-team">팀 순위</label>
+
+        <input type="radio" name="record-tab" id="tab-hitter">
+        <label for="tab-hitter">타자 기록</label>
+
+        <input type="radio" name="record-tab" id="tab-pitcher">
+        <label for="tab-pitcher">투수 기록</label>
+
+        <div class="content">
+          <div id="team" class="record-section">
+            <h3>팀 순위</h3>
+            <img src="teamrecord.png" width="1000">
+          </div>
+          <div id="hitter" class="record-section">
+            <h3>타자 기록</h3>
+            <img src="hitterrecord.png" width="1000">
+          </div>
+          <div id="pitcher" class="record-section">
+            <h3>투수 기록</h3>
+            <img src="pitcherrecord.png" width="1000">
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
