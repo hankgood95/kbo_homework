@@ -1,82 +1,182 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>일정 및 결과 | KBO</title>
-  <link rel="stylesheet" type="text/css" href="common.css">
-  
-<style>
-#page {
-    width: 980px;
-    margin: 0 auto;
-}
-header #logo {
-    float: left;
-    margin: 15px 0 0 20px;
-}
-header #moto {
-    float: left;
-    margin: 45px 0 0 20px;
-}
-header #top_menu {
-    float: right;
-    margin: 50px 0 0 0;
-}
-header #top_menu li {
-    display: inline;
-}
-.line {
-    margin-top: 25px;
-    border-top: solid 1px #cccccc;
-}
-header nav ul {
-    margin-top: 25px;
-}
-header nav li {
-    display: inline;
-}
-header nav li.item {
-    margin-left: 40px;
-}
-main {
-    margin-top: 10px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <title>KBO 홈페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/schedule.css">
 </head>
 <body>
-  <div id="page">
-    
-<header>
-  <a href="mainpage.html"><img id="logo" src="logo.png" alt="KBO 홈"></a>
-  <img id="moto" src="moto.png">
-  <ul id="top_menu">
-    <li>로그인 | </li>
-    <li>회원가입 | </li>
-    <li>사이트맵 | </li>
-    <li>회사 소개 | </li>
-  </ul>
-  <div class="clear"></div>
-  <div class="line"></div>
+    <div id="page">
+        <header>
+            <a href="mainpage.html"><img id="logo" src="images/main/logo.png" alt="KBO 홈"></a>
+            <ul id="top_menu">
+                <li>로그인 | </li>
+                <li>회원가입 | </li>
+                <li>사이트맵 | </li>
+                <li>회사 소개 | </li>
+            </ul>
+            <div class="clear"></div>
+            <div class="line"></div>
 
-  <nav>
-    <ul>
-      <br><br><br><br>
-      <li><a href="schedule.html"><img src="menu01.png" alt="일정결과"></a></li>
-      <li class="item"><a href="record.html"><img src="menu02.png" alt="기록순위"></a></li>
-      <li class="item"><a href="media.html"><img src="menu03.png" alt="미디어뉴스"></a></li>
-      <li class="item"><a href="team.html"><img src="menu04.png" alt="구단소개"></a></li>
-      <li class="item"><a href="promotion.html"><img src="menu05.png" alt="KBO홍보창"></a></li>
-    </ul>
-  </nav>
-</header>
+            <nav>
+                <ul class="main_menu">
+                    <li><a href="mainpage.html">홈</a></li>
+                    <li><a href="schedule.html" class="active">일정결과</a></li>
+                    <li><a href="record.html">기록순위</a></li>
+                    <li><a href="media.html">미디어뉴스</a></li>
+                    <li><a href="team.html">구단소개</a></li>
+                    <li><a href="promotion.html">KBO홍보창</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-      <h2>KBO 일정 및 결과</h2>
-      <img src="schedule.png" alt="KBO 일정 및 결과" width="600">
-      <h2>야구장 날씨</h2>
-      <img src="weather.png" alt="야구장 날씨" width="600">
-    </main>
-  </div>
+        <main>
+            <section>
+                <div class="team-table">
+                    <div class="team-cell selected">전체</div>
+                    <div class="team-cell"><img src="images/schedule/initial_HT.png" alt="KIA" class="team-initial"><span class="team-name">KIA</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_SS.png" alt="삼성" class="team-initial"><span class="team-name">삼성</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_LG.png" alt="LG" class="team-initial"><span class="team-name">LG</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_OB.png" alt="두산" class="team-initial"><span class="team-name">두산</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_KT.png" alt="KT" class="team-initial"><span class="team-name">KT</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_SK.png" alt="SSG" class="team-initial"><span class="team-name">SSG</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_LT.png" alt="롯데" class="team-initial"><span class="team-name">롯데</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_HH.png" alt="한화" class="team-initial"><span class="team-name">한화</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_NC.png" alt="NC" class="team-initial"><span class="team-name">NC</span></div>
+                    <div class="team-cell"><img src="images/schedule/initial_WO.png" alt="키움" class="team-initial"><span class="team-name">키움</span></div>
+                </div>
+            </section>
+
+            <section>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>날짜</th>
+                            <th>시간</th>
+                            <th>경기</th>
+                            <th>게임센터</th>
+                            <th>하이라이트</th>
+                            <th>TV</th>
+                            <th>라디오</th>
+                            <th>구장</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">06.01(일)</td>
+                            <td>14:00</td>
+                            <td>두산 0 vs 1 키움</td>
+                            <td><button class="review">리뷰</button></td>
+                            <td><button class="highlight">하이라이트</button></td>
+                            <td>S-T</td>
+                            <td></td>
+                            <td>고척</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>삼성 6 vs 4 LG</td>
+                            <td><button class="review">리뷰</button></td>
+                            <td></td>
+                            <td>SPO-T</td>
+                            <td></td>
+                            <td>잠실</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>SSG 4 vs 3 롯데</td>
+                            <td><button class="review">리뷰</button></td>
+                            <td></td>
+                            <td>MS-T<br>SS-T</td>
+                            <td></td>
+                            <td>사직</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>한화 5 vs 16 NC</td>
+                            <td><button class="review">리뷰</button></td>
+                            <td></td>
+                            <td>KN-T</td>
+                            <td></td>
+                            <td>창원</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>KIA 5 vs 3 KT</td>
+                            <td><button class="review">리뷰</button></td>
+                            <td></td>
+                            <td>SPO-2T</td>
+                            <td></td>
+                            <td>수원</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">06.03(화)</td>
+                            <td>14:00</td>
+                            <td>LG vs NC</td>
+                            <td><button class="preview">프리뷰</button></td>
+                            <td></td>
+                            <td>SPO-T</td>
+                            <td></td>
+                            <td>창원</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>KT vs 한화</td>
+                            <td><button class="preview">프리뷰</button></td>
+                            <td></td>
+                            <td>SS-T</td>
+                            <td></td>
+                            <td>대전(신)</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>KIA vs 두산</td>
+                            <td><button class="preview">프리뷰</button></td>
+                            <td></td>
+                            <td>KN-T</td>
+                            <td></td>
+                            <td>잠실</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>삼성 vs SSG</td>
+                            <td><button class="preview">프리뷰</button></td>
+                            <td></td>
+                            <td>SPO-2T</td>
+                            <td></td>
+                            <td>문학</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>17:00</td>
+                            <td>키움 vs 롯데</td>
+                            <td><button class="preview">프리뷰</button></td>
+                            <td></td>
+                            <td>MS-T</td>
+                            <td></td>
+                            <td>사직</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <footer>
+                한국야구위원회 | 서울시 OO구 OO로 00 | 02)1234-5678<br>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>

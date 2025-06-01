@@ -1,0 +1,274 @@
+#page {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 120px;
+    height: 60px;
+    margin: 20px;
+    float: left;
+    vertical-align: middle;
+}
+
+header #top_menu {
+    float: right;
+    margin: 50px 0 0 0;
+}
+
+header #top_menu li {
+    display: inline;
+}
+
+.line {
+    margin-top: 25px;
+    border-top: solid 1px #cccccc;
+}
+
+header nav {
+    margin-top: 25px;
+}
+
+.main_menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main_menu li {
+    margin: 0 20px;
+}
+
+.main_menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main_menu a:hover {
+    background-color: #002f87;
+    color: white;
+}
+
+.main_menu a.active {
+    background-color: #002f87;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.big_menu {
+    width: 100%;
+    background: #f5f7fa;
+    margin: 30px 0 20px 0;
+    padding: 20px 0;
+}
+.big_menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 30px;
+}
+.big_menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.big_menu li img {
+    margin-bottom: 6px;
+    display: block;
+}
+.big_menu li:hover {
+    color: #002f87;
+}
+
+.team-ranking {
+    width: 400px;
+    margin: 0 auto 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 20px 20px 10px 20px;
+}
+.ranking-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.ranking-header .arrow {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.ranking-header .plus {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.team-ranking table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.team-ranking th, .team-ranking td {
+    border: 1px solid #ddd;
+    padding: 4px 6px;
+    text-align: center;
+}
+.team-ranking th {
+    background: #f5f7fa;
+    font-weight: bold;
+}
+.ranking-date {
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* 아래 스타일은 schedule.css로 이동 */
+
+.team-table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+.team-cell {
+    padding: 6px 18px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    color: #222;
+    background: #fff;
+}
+.team-cell.selected,
+.team-cell:hover {
+    background: #111;
+    color: #fff;
+}
+
+.team-initial {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* 조직·활동 섹션 스타일 */
+.org-activity {
+  background: #f8f8fa;
+  border-radius: 18px;
+  padding: 36px 32px 32px 32px;
+  margin: 40px 0 0 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.org-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #222;
+  letter-spacing: -1px;
+}
+.org-content {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+}
+.org-left, .org-right {
+  flex: 1;
+}
+.org-kbo-title {
+  color: #23408e;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.org-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.org-list li {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 14px;
+}
+.org-list li:before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #23408e;
+  font-size: 1.1rem;
+  top: 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 70px;
+  margin-bottom: 24px;
+}
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -1px;
+}
+.breadcrumb {
+  font-size: 0.98rem;
+  color: #888;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.breadcrumb .home-icon {
+  font-size: 1.05rem;
+  vertical-align: middle;
+}
+.breadcrumb .current {
+  color: #23408e;
+  font-weight: 500;
+}
+
+.org-logo-wrap {
+  display: flex;
+  align-items: center;
+  margin: 48px 0 48px 0;
+}
+.org-logo-wrap.left-align {
+  justify-content: flex-start;
+}
+.org-logo {
+  max-width: 440px;
+  height: auto;
+  display: block;
+} 

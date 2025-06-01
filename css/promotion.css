@@ -1,0 +1,108 @@
+/* 조직·활동(프로모션) 페이지 전용 스타일 */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 70px;
+  margin-bottom: 24px;
+}
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -1px;
+}
+.breadcrumb {
+  font-size: 0.98rem;
+  color: #888;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.breadcrumb .home-icon {
+  font-size: 1.05rem;
+  vertical-align: middle;
+}
+.breadcrumb .current {
+  color: #23408e;
+  font-weight: 500;
+}
+
+.org-logo-wrap {
+  display: flex;
+  align-items: center;
+  margin: 48px 0 48px 0;
+}
+.org-logo-wrap.left-align {
+  justify-content: flex-start;
+}
+.org-logo {
+  max-width: 440px;
+  height: auto;
+  display: block;
+}
+
+.org-activity {
+  background: #f8f8fa;
+  border-radius: 18px;
+  padding: 36px 32px 32px 32px;
+  margin: 36px 0 0 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.org-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #222;
+  letter-spacing: -1px;
+}
+.org-content {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+}
+.org-left, .org-right {
+  flex: 1;
+}
+.org-kbo-title {
+  color: #23408e;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.org-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.org-list li {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 14px;
+}
+.org-list li:before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #23408e;
+  font-size: 1.1rem;
+  top: 0;
+}
+
+.org-img-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin: 56px auto 0 auto;
+  padding: 0;
+}
+.org-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0;
+} 

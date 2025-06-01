@@ -1,0 +1,200 @@
+#banner {
+    height: 110px;
+    background-color: #00a8ab;
+}
+
+#banner ul {
+    margin-top: 5px;
+}
+
+#banner li {
+    display: inline;
+    margin-left: 28px;
+}
+
+#costomer {
+    width: 300px;
+    height: 111px;
+    float: left;
+    margin-top: 20px;
+}
+
+#costomer .title {
+    margin-left: 10px;
+    float: left;
+}
+
+#costomer .more {
+    float: right;
+}
+
+#costmoer .phone {
+    margin-left: 10px;
+}
+
+#notice {
+    width: 300px;
+    height: 111px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#notice .title {
+    margin-left: 10px;
+    float: left;
+}
+
+#notice .more {
+    float: right;
+}
+
+#notice ul {
+    margin-top: 12px;
+    color: #666666;
+}
+
+#notice li {
+    margin-top: 5px;
+}
+
+#notice .subject {
+    float: left;
+    margin-left: 10px;
+}
+
+#notice .date {
+    float: right;
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-left: 400PX;
+    background-color: #002f87;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.main-flex {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 60px 0;
+    gap: 20px;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.main-img-slide,
+.team-ranking {
+    box-sizing: border-box;
+}
+
+.main-img-slide {
+    flex: 1 1 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.main-img-slide img {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+}
+
+.team-ranking {
+    flex: 1 1 0;
+    height: 350px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-radius: 12px;
+}
+
+.team-ranking table {
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+.team-ranking th, .team-ranking td {
+    padding: 4px 6px;
+    border: none;
+    vertical-align: middle;
+    white-space: normal;
+    text-overflow: unset;
+    overflow: visible;
+}
+
+.team-ranking tbody {
+    height: 100%;
+    display: table-row-group;
+}
+
+.team-ranking tr {
+    height: calc((350px - 60px) / 10);
+}
+
+.team-ranking td {
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.team-ranking th, .team-ranking td {
+    padding: 2px 3px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ranking-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.ranking-header .arrow {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.ranking-header .plus {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.team-ranking th {
+    background: #f5f7fa;
+    font-weight: bold;
+}
+.ranking-date {
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+} 

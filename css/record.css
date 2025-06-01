@@ -1,0 +1,256 @@
+.tab-buttons {
+    margin-top: 20px;
+}
+
+.tab-buttons label {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input[name="record-tab"] {
+    display: none;
+}
+
+.record-section {
+    display: none;
+    margin-top: 20px;
+}
+
+#tab-team:checked ~ .content #team,
+#tab-hitter:checked ~ .content #hitter,
+#tab-pitcher:checked ~ .content #pitcher {
+    display: block;
+}
+
+input#tab-team:checked + label[for="tab-team"],
+input#tab-hitter:checked + label[for="tab-hitter"],
+input#tab-pitcher:checked + label[for="tab-pitcher"] {
+    background-color: #00a8ab;
+    color: white;
+}
+
+/* record-tabs 스타일 */
+.record-tabs {
+    border-bottom: none;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+/* 연한 까만줄 공간 띄워서 추가 */
+.record-tabs::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: #d1d1d1;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+}
+
+.tab-menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.tab-menu li {
+    padding: 10px 30px 8px 30px;
+    font-weight: 700;
+    color: #0a1744;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2.5px solid transparent;
+    cursor: pointer;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.tab-menu li.active {
+    border-bottom: 2.5px solid #0a1744;
+    background: #fff;
+}
+
+.record-buttons {
+    margin-top: 20px;
+}
+
+.record-buttons button {
+    padding: 7px 18px;
+    margin-right: 5px;
+    border: 1.5px solid #ccc;
+    background: #f7f7f7;
+    color: #222;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.record-buttons button.active,
+.record-buttons button:active {
+    background: #fff;
+    color: #0a1744;
+    border: 1.5px solid #0a1744;
+}
+
+/* 타자기록 섹션 스타일 */
+.hitter-record-section {
+    margin-top: 30px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 18px 18px 10px 18px;
+    background: #fff;
+    width: 98%;
+    box-sizing: border-box;
+}
+
+.hitter-record-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #444;
+    letter-spacing: -1px;
+}
+
+.hitter-record-tabs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 8px;
+}
+
+.hitter-record-tabs {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.hitter-record-tabs li {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    padding: 0 8px 2px 0;
+    margin-right: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.hitter-record-tabs li.active {
+    border-bottom: none;
+}
+
+.hitter-record-tabs li.active span {
+    border-bottom: 2px solid #111;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.hitter-record-tabs li:not(:last-child)::after {
+    content: '|';
+    color: #888;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.record-view-controls {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.arrow-btn {
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    color: #444;
+    font-size: 15px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 2px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.arrow-btn:hover {
+    background: #e0e0e0;
+}
+
+.view-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #444;
+    margin: 0 6px;
+}
+
+/* 타자기록 테이블 스타일 */
+.hitter-record-table-wrap {
+    margin-top: 18px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    padding: 10px 0 18px 0;
+}
+
+.hitter-record-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background: #fff;
+    text-align: center;
+}
+
+.hitter-record-table thead tr {
+    background: #f7f7f7;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.hitter-record-table th, .hitter-record-table td {
+    padding: 7px 6px;
+    border: 1px solid #e0e0e0;
+    font-weight: 500;
+}
+
+.hitter-record-table th {
+    color: #222;
+    font-weight: 700;
+    font-size: 15px;
+    background: #f7f7f7;
+}
+
+.hitter-record-table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+.hitter-record-table tbody tr:hover {
+    background: #f0f4fa;
+}
+
+.hitter-record-table td {
+    color: #222;
+    font-size: 15px;
+}
+
+.hitter-record-table td:first-child {
+    font-weight: 700;
+    color: #0a1744;
+}
+
+.hitter-record-table td:nth-child(2) {
+    font-weight: 700;
+} 

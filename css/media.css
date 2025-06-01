@@ -1,0 +1,110 @@
+input[name="media-tab"] {
+    display: none;
+}
+
+.tab-wrapper label {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.media-section {
+    display: none;
+    margin-top: 20px;
+}
+
+#tab-highlight:checked ~ .media-content #highlight,
+#tab-news:checked ~ .media-content #news {
+    display: block;
+}
+
+input#tab-highlight:checked + label[for="tab-highlight"],
+input#tab-news:checked + label[for="tab-news"] {
+    background-color: #00a8ab;
+    color: white;
+}
+
+/* 하이라이트 상단 경로 */
+.media-breadcrumb {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* 하이라이트 제목 */
+.media-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* KBO 리그 소제목 */
+.media-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.media-subtitle span {
+  font-weight: 700;
+}
+
+/* 날짜 네비게이션 */
+.media-date-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.media-date-nav .arrow {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.media-date-nav .date {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.media-date-nav .calendar-icon {
+  width: 24px;
+  vertical-align: middle;
+}
+
+/* 영상 리스트 점 없애기 및 경계선 */
+.media-video-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.media-video-list li {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  position: relative;
+}
+.media-video-list .media-video-frame-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 비율 */
+  height: 0;
+  overflow: hidden;
+}
+.media-video-list iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  border: none;
+}
+
+/* 영상 제목 스타일 */
+.media-video-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  color: #222;
+} 

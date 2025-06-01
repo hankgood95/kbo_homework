@@ -1,0 +1,52 @@
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-box {
+    flex: 0 1 calc(20% - 16px);
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team-box:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.team-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team-box h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* 지도 섹션 스타일 */
+.map-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.map-section img {
+    max-width: 80%;
+    height: auto;
+    border: 15px solid #000080;
+    border-radius: 5px;
+} 

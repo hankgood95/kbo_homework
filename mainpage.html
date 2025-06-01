@@ -1,194 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="common.css">
-<title>KBO 홈페이지</title>
-<style>
-#page {
-    width: 980px;
-    margin: 0 auto;
-}
-header #logo {
-    float: left;
-    margin: 15px 0 0 20px;
-}
-header #moto {
-    float: left;
-    margin: 45px 0 0 20px;
-}
-header #top_menu {
-    float: right;
-    margin: 50px 0 0 0;
-}
-header #top_menu li {
-    display: inline;
-}
-
-.line {
-    margin-top: 25px;
-    border-top: solid 1px #cccccc;
-}
-
-header nav ul {
-    margin-top: 25px;
-}
-header nav li {
-    display: inline;
-}
-header nav li.item {
-    margin-left: 40px;
-}
-
-main {
-    margin-top: 10px;
-}
-
-#banner {
-    height: 110px;
-    background-color: #00a8ab;
-}
-#banner ul {
-    margin-top: 5px;
-}
-#banner li {
-    display: inline;
-    margin-left: 28px;
-}
-
-#costomer {
-    width: 300px;
-    height: 111px;
-    float: left;
-    margin-top: 20px;
-}
-#costomer .title {
-    margin-left: 10px;
-    float: left;
-}
-#costomer .more {
-    float: right;
-}
-#costmoer .phone {
-    margin-left: 10px;
-}
-
-#notice {
-    width: 300px;
-    height: 111px;
-    float: left;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-#notice .title {
-    margin-left: 10px;
-    float: left;
-}
-#notice .more {
-    float: right;
-}
-#notice ul {
-    margin-top: 12px;
-    color: #666666;
-}
-#notice li {
-    margin-top: 5px;
-}
-#notice .subject {
-    float: left;
-    margin-left: 10px;
-}
-#notice .date {
-    float: right;
-    margin-right: 5px;
-}
-footer {
-    margin-top: 50px;
-    margin-left: 400PX;
-    background-color: #002f87;
-    color: white;
-    padding: 50px;
-    text-align: center;
-    font-size: 0.9em;
-}
-.line {
-    margin-top: 25px;
-    border-top: solid 1px #cccccc;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>KBO 홈페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<div id="page">
-  <header>
-  <a href="mainpage.html"><img id="logo" src="logo.png" alt="KBO 홈"></a>
-  <img id="moto" src="moto.png">
-  <ul id="top_menu">
-    <li>로그인 | </li>
-    <li>회원가입 | </li>
-    <li>사이트맵 | </li>
-    <li>회사 소개 | </li>
-  </ul>
-  <div class="clear"></div>
-  <div class="line"></div>
+    <div id="page">
+        <header>
+            <a href="mainpage.html"><img id="logo" src="images/main/logo.png" alt="KBO 홈"></a>
+            <ul id="top_menu">
+                <li>로그인 | </li>
+                <li>회원가입 | </li>
+                <li>사이트맵 | </li>
+                <li>회사 소개 | </li>
+            </ul>
+            <div class="clear"></div>
+            <hr>
+            <nav>
+                <ul class="main_menu">
+                    <li><a href="mainpage.html" class="active">홈</a></li>
+                    <li><a href="schedule.html">일정결과</a></li>
+                    <li><a href="record.html">기록순위</a></li>
+                    <li><a href="media.html">미디어뉴스</a></li>
+                    <li><a href="team.html">구단소개</a></li>
+                    <li><a href="promotion.html">KBO홍보창</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <main>
+            <section class="main-flex">
+                <div class="main-img-slide">
+                    <img src="images/main/main_img_slide.png" alt="메인 슬라이드" />
+                </div>
+                <div class="team-ranking">
+                    <div class="ranking-header">
+                        <span class="arrow">&lt;</span>
+                        <span class="title">TEAM RANKING</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>순위</th>
+                                <th>팀명</th>
+                                <th>경기</th>
+                                <th>승</th>
+                                <th>패</th>
+                                <th>무</th>
+                                <th>승률</th>
+                                <th>게임차</th>
+                                <th>연속</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>LG</td><td>58</td><td>35</td><td>22</td><td>1</td><td>0.614</td><td>-</td><td>3패</td></tr>
+                            <tr><td>2</td><td>한화</td><td>58</td><td>34</td><td>24</td><td>0</td><td>0.586</td><td>1.5</td><td>1패</td></tr>
+                            <tr><td>3</td><td>롯데</td><td>59</td><td>31</td><td>25</td><td>3</td><td>0.554</td><td>3.5</td><td>2패</td></tr>
+                            <tr><td>4</td><td>삼성</td><td>58</td><td>31</td><td>26</td><td>1</td><td>0.544</td><td>4</td><td>7승</td></tr>
+                            <tr><td>5</td><td>KT</td><td>59</td><td>30</td><td>26</td><td>3</td><td>0.536</td><td>4.5</td><td>1패</td></tr>
+                            <tr><td>6</td><td>SSG</td><td>57</td><td>29</td><td>26</td><td>2</td><td>0.527</td><td>5</td><td>2승</td></tr>
+                            <tr><td>7</td><td>KIA</td><td>56</td><td>27</td><td>28</td><td>1</td><td>0.491</td><td>7</td><td>1승</td></tr>
+                            <tr><td>8</td><td>NC</td><td>54</td><td>24</td><td>27</td><td>3</td><td>0.471</td><td>8</td><td>1승</td></tr>
+                            <tr><td>9</td><td>두산</td><td>58</td><td>23</td><td>32</td><td>3</td><td>0.418</td><td>11</td><td>2패</td></tr>
+                            <tr><td>10</td><td>키움</td><td>61</td><td>16</td><td>44</td><td>1</td><td>0.267</td><td>20.5</td><td>2승</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="ranking-date">2025년 6월 1일 기준</div>
+                </div>
+            </section>
 
-  <nav>
-    <ul>
-      <br><br><br><br>
-      <li><a href="schedule.html"><img src="menu01.png" alt="일정결과"></a></li>
-      <li class="item"><a href="record.html"><img src="menu02.png" alt="기록순위"></a></li>
-      <li class="item"><a href="media.html"><img src="menu03.png" alt="미디어뉴스"></a></li>
-      <li class="item"><a href="team.html"><img src="menu04.png" alt="구단소개"></a></li>
-      <li class="item"><a href="promotion.html"><img src="menu05.png" alt="KBO홍보창"></a></li>
-    </ul>
-  </nav>
-  </header>
+            <nav class="big_menu">
+                <ul>
+                    <li title="이동하기"><img src="images/main/game_center.png" alt="게임센터" width="36"><br>게임센터</li>
+                    <li title="이동하기"><img src="images/main/giroksil.png" alt="기록실" width="36"><br>기록실</li>
+                    <li title="이동하기"><img src="images/main/highlight.png" alt="하이라이트" width="36"><br>하이라이트</li>
+                    <li title="이동하기"><img src="images/main/VCR.png" alt="비디오 판독" width="36"><br>비디오 판독</li>
+                    <li title="이동하기"><img src="images/main/team_rank.png" alt="팀 순위" width="36"><br>팀 순위</li>
+                    <li title="이동하기"><img src="images/main/player.png" alt="선수" width="36"><br>선수</li>
+                    <li title="이동하기"><img src="images/main/avg_play_time.png" alt="평균경기시간" width="36"><br>평균경기시간</li>
+                    <li title="이동하기"><img src="images/main/market.png" alt="마켓" width="36"><br>마켓</li>
+                    <li title="이동하기"><img src="images/main/clean_baseball.png" alt="클린베이스볼" width="36"><br>클린베이스볼</li>
+                    <li title="이동하기"><img src="images/main/museum.png" alt="야구박물관" width="36"><br>야구박물관</li>
+                    <li title="이동하기"><img src="images/main/certificate.png" alt="증명서" width="36"><br>증명서</li>
+                </ul>
+            </nav>
 
-  <main>
-    <section id="banner">
-      <ul>
-        <li><img src="banner01.png"></li>
-        <li><img src="banner02.png"></li>
-        <li><img src="banner03.png"></li>
-      </ul>
-    </section>
+            <article id="notice">
+                <img class="title" src="images/main/title_notice.png">
+                <img class="more" src="images/main/more.png"><br>
+                <div class="clear"></div>
+                <ul>
+                    <li>
+                        <div class="subject">오늘의 kbo소식</div>
+                        <div class="date">2025-05-27</div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="subject">오늘의 kbo소식</div>
+                        <div class="date">2025-05-26</div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="subject">오늘의 kbo소식</div>
+                        <div class="date">2025-05-25</div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="subject">오늘의 kbo소식</div>
+                        <div class="date">2025-05-24</div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </article>
 
-    <section>
-      <img src="mainrecord.png">
-    </section>
-
-    <article id="notice">
-      <img class="title" src="title_notice.png">
-      <img class="more" src="more.png"><br>
-      <div class="clear"></div>
-      <ul>
-        <li>
-          <div class="subject">오늘의 kbo소식</div>
-          <div class="date">2025-05-27</div>
-          <div class="clear"></div>
-        </li>
-        <li>
-          <div class="subject">오늘의 kbo소식</div>
-          <div class="date">2025-05-26</div>
-          <div class="clear"></div>
-        </li>
-        <li>
-          <div class="subject">오늘의 kbo소식</div>
-          <div class="date">2025-05-25</div>
-          <div class="clear"></div>
-        </li>
-        <li>
-          <div class="subject">오늘의 kbo소식</div>
-          <div class="date">2025-05-24</div>
-          <div class="clear"></div>
-        </li>
-      </ul>
-    </article>
-
-    <footer>
-      한국야구위원회 | 서울시 OO구 OO로 00 | 02)1234-5678<br>
-
-    </footer>
-  </main>
-</div>
+            <footer>
+                한국야구위원회 | 서울시 OO구 OO로 00 | 02)1234-5678<br>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>

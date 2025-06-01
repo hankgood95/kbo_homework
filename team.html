@@ -2,107 +2,94 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>구단 소개 | KBO</title>
-  <link rel="stylesheet" type="text/css" href="common.css">
-  
-<style>
-#page {
-    width: 980px;
-    margin: 0 auto;
-}
-header #logo {
-    float: left;
-    margin: 15px 0 0 20px;
-}
-header #moto {
-    float: left;
-    margin: 45px 0 0 20px;
-}
-header #top_menu {
-    float: right;
-    margin: 50px 0 0 0;
-}
-header #top_menu li {
-    display: inline;
-}
-.line {
-    margin-top: 25px;
-    border-top: solid 1px #cccccc;
-}
-header nav ul {
-    margin-top: 25px;
-}
-header nav li {
-    display: inline;
-}
-header nav li.item {
-    margin-left: 40px;
-}
-main {
-    margin-top: 10px;
-}
-.teams {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-.team-box {
-    flex: 1 1 calc(33.333% - 20px);
-    border: 1px solid #cccccc;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-</style>
-
+  <title>KBO 홈페이지</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/team.css">
 </head>
 <body>
   <div id="page">
-    
-<header>
-  <a href="mainpage.html"><img id="logo" src="logo.png" alt="KBO 홈"></a>
-  <img id="moto" src="moto.png">
-  <ul id="top_menu">
-    <li>로그인 | </li>
-    <li>회원가입 | </li>
-    <li>사이트맵 | </li>
-    <li>회사 소개 | </li>
-  </ul>
-  <div class="clear"></div>
-  <div class="line"></div>
+    <header>
+      <a href="mainpage.html"><img id="logo" src="images/main/logo.png" alt="KBO 홈"></a>
+      <ul id="top_menu">
+        <li>로그인 | </li>
+        <li>회원가입 | </li>
+        <li>사이트맵 | </li>
+        <li>회사 소개 | </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="line"></div>
 
-  <nav>
-    <ul>
-      <br><br><br><br>
-      <li><a href="schedule.html"><img src="menu01.png" alt="일정결과"></a></li>
-      <li class="item"><a href="record.html"><img src="menu02.png" alt="기록순위"></a></li>
-      <li class="item"><a href="media.html"><img src="menu03.png" alt="미디어뉴스"></a></li>
-      <li class="item"><a href="player.html"><img src="menu04.png" alt="선수소개"></a></li>
-      <li class="item"><a href="promotion.html"><img src="menu05.png" alt="KBO홍보창"></a></li>
-    </ul>
-  </nav>
-</header>
-  <main>
-  <div class="teams">
-  <div class="team-box"><strong>LG 트윈스</strong>&nbsp;<img src="lg_logo.jpg"><br>연고지: 서울<br>홈구장: 잠실야구장</div>
-  <div class="team-box"><strong>두산 베어스</strong>&nbsp;<img src="db_logo.jpg"><br>연고지: 서울<br>홈구장: 잠실야구장</div>
-  <div class="team-box"><strong>키움 히어로즈</strong>&nbsp;<img src="kw_logo.jpg"><br>연고지: 서울<br>홈구장: 고척스카이돔</div>
-  <div class="team-box"><strong>KT 위즈</strong>&nbsp;<img src="kt_logo.jpg"><br>연고지: 수원<br>홈구장: 수원 KT 위즈 파크</div>
-  <div class="team-box"><strong>SSG 랜더스</strong>&nbsp;<img src="ssg_logo.jpg"><br>연고지: 인천<br>홈구장: 인천 SSG 랜더스필드</div>
-  <div class="team-box"><strong>한화 이글스</strong>&nbsp;<img src="han_logo.jpg"><br>연고지: 대전<br>홈구장: 대전 한화생명 볼파크</div>
-  <div class="team-box"><strong>삼성 라이온즈</strong>&nbsp;<img src="sam_logo.jpg"><br>연고지: 대구<br>홈구장: 대구 삼성 라이온즈 파크</div>
-  <div class="team-box"><strong>롯데 자이언츠</strong>&nbsp;<img src="lot_logo.jpg"><br>연고지: 부산<br>홈구장: 사직 야구장</div>
-  <div class="team-box"><strong>NC 다이노스</strong>&nbsp;<img src="nc_logo.jpg"><br>연고지: 창원<br>홈구장: 창원NC파크</div>
-  <div class="team-box"><strong>KIA 타이거즈</strong>&nbsp;<img src="kia_logo.jpg"><br>연고지: 광주<br>홈구장: 광주 기아 챔피언스 필드</div>
-  </div>
+      <nav>
+        <ul class="main_menu">
+          <li><a href="mainpage.html">홈</a></li>
+          <li><a href="schedule.html">일정결과</a></li>
+          <li><a href="record.html">기록순위</a></li>
+          <li><a href="media.html">미디어뉴스</a></li>
+          <li><a href="team.html" class="active">구단소개</a></li>
+          <li><a href="promotion.html">KBO홍보창</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class="map-section">
-    <h3>구단 연고지 지도</h3>
-    <img src="kbo_map.png">
-  </div>
-  </main>
+    <main>
+      <section class="teams">
+        <div class="team-row">
+          <div class="team-box">
+            <img src="images/team/lg_logo.jpg" alt="LG 트윈스">
+            <h3>LG 트윈스</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/db_logo.jpg" alt="두산 베어스">
+            <h3>두산 베어스</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/kw_logo.jpg" alt="키움 히어로즈">
+            <h3>키움 히어로즈</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/kt_logo.jpg" alt="KT 위즈">
+            <h3>KT 위즈</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/ssg_logo.jpg" alt="SSG 랜더스">
+            <h3>SSG 랜더스</h3>
+          </div>
+        </div>
+        <div class="team-row">
+          <div class="team-box">
+            <img src="images/team/han_logo.jpg" alt="한화 이글스">
+            <h3>한화 이글스</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/sam_logo.jpg" alt="삼성 라이온즈">
+            <h3>삼성 라이온즈</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/lot_logo.jpg" alt="롯데 자이언츠">
+            <h3>롯데 자이언츠</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/nc_logo.jpg" alt="NC 다이노스">
+            <h3>NC 다이노스</h3>
+          </div>
+          <div class="team-box">
+            <img src="images/team/kia_logo.jpg" alt="KIA 타이거즈">
+            <h3>KIA 타이거즈</h3>
+          </div>
+        </div>
+      </section>
 
+      <section class="map-section">
+        <img src="images/team/kbo_map.png" alt="KBO 구단 지도">
+      </section>
+    </main>
+    <br>
+    <hr>
+    <br>
+    <footer>
+        한국야구위원회 | 서울시 OO구 OO로 00 | 02)1234-5678<br>
+    </footer>
   </div>
 </body>
 </html>
