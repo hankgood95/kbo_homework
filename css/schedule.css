@@ -11,7 +11,7 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: all 0.2s;
     color: #222;
     background: #fff;
 }
@@ -51,7 +51,7 @@
     color: #222;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: all 0.2s;
 }
 .schedule-table button.review {
     border-color: #222;
@@ -63,7 +63,6 @@
     border-color: #111;
     background: #fff;
     color: #111;
-    transition: background 0.2s, color 0.2s;
 }
 .schedule-table button.highlight:hover {
     background: #000;

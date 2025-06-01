@@ -149,38 +149,6 @@ header nav {
     margin-top: 4px;
 }
 
-/* 아래 스타일은 schedule.css로 이동 */
-
-.team-table {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 0;
-}
-.team-cell {
-    padding: 6px 18px;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-    color: #222;
-    background: #fff;
-}
-.team-cell.selected,
-.team-cell:hover {
-    background: #111;
-    color: #fff;
-}
-
-.team-initial {
-    width: 28px;
-    height: 28px;
-    margin-right: 6px;
-    vertical-align: middle;
-}
-
 /* 조직·활동 섹션 스타일 */
 .org-activity {
   background: #f8f8fa;
@@ -248,27 +216,23 @@ header nav {
 .breadcrumb {
   font-size: 0.98rem;
   color: #888;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 .breadcrumb .home-icon {
-  font-size: 1.05rem;
-  vertical-align: middle;
+  margin-right: 4px;
 }
 .breadcrumb .current {
-  color: #23408e;
+  color: #222;
   font-weight: 500;
 }
-
 .org-logo-wrap {
   display: flex;
-  align-items: center;
-  margin: 48px 0 48px 0;
+  justify-content: center;
+  margin: 40px 0;
 }
 .org-logo-wrap.left-align {
   justify-content: flex-start;
 }
 .org-logo {
-  max-width: 440px;
+  max-width: 100%;
   height: auto;
-  display: block;
 } 
